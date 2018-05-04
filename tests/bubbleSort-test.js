@@ -7,20 +7,20 @@ describe('bubble', () => {
   it('Should be a function', () => {
     expect(bubble).to.be.a.function
   })
-  it('Should only sort arrays', () => {;
+  it('Should only sort arrays', () => {
     expect(bubble('string')).to.equal('string is not an array.')
   })
-  it.skip('Should be able to sort an array of one', () => {
+  it('Should be able to sort an array of one', () => {
     let numbers = [1]
     let sorted = bubble(numbers)
     expect(sorted).to.deep.equal([1])
   })
-  it.skip('Should be able to sort positive and negative numbers', () => {
+  it('Should be able to sort positive and negative numbers', () => {
     let numbers = [1, 10, -5, -15]
     let sorted = bubble(numbers)
     expect(sorted).to.deep.equal([-15, -5, 1, 10])
   })
-  it.skip('Should be able to sort letters', () => {
+  it('Should be able to sort letters', () => {
     let letters = ["d", "b", "a", "c"]
     let sorted = ["a", "b", "c", "d"]
     expect(bubble(letters)).to.deep.equal(sorted)
